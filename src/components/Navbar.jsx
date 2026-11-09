@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import personalInfo from '../data/portfolioData';
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
 
-  const hireMeMailto = `mailto:${personalInfo.emails.primary}?subject=Hiring Inquiry – Portfolio&body=Hello ${personalInfo.name},%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,`;
+  const hireMeMailto = `mailto:${personalInfo?.emails?.primary || 'saiswethasalem@gmail.com'}?subject=Hiring Inquiry – Portfolio&body=Hello ${personalInfo?.name || 'Swetha'},%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,`;
 
   return (
     <nav
@@ -32,9 +32,9 @@ const Navbar = () => {
     >
       {/* Inner wrapper */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-        {/* Left: Logo */}
+        {/* Left: Brand / Logo */}
         <a href="#" className="text-white text-2xl font-black">
-          {personalInfo.brandName}
+          {personalInfo?.brandName || 'Swetha'}
           <span className="text-[#ff2a2a]">.</span>
         </a>
 
@@ -47,7 +47,7 @@ const Navbar = () => {
               className="group relative text-white/80 hover:text-white font-medium transition-colors"
             >
               {link}
-              <span className="absolute -bottom-1 left-0 h-0.5 bg-red-500 w-0 group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute -bottom-1 left-0 h-0.5 bg-red-500 w-0 group-hover:w-full transition-all duration-300" />
             </a>
           ))}
         </div>
