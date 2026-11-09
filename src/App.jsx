@@ -7,23 +7,21 @@ import Internships from './components/Internships';
 import Leadership from './components/Leadership';
 import SoftSkills from './components/SoftSkills';
 import Footer from './components/Footer';
+import { internshipsList, leadershipList } from './data/portfolioData';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col justify-between">
+    <>
       <Navbar />
       <Hero />
       <About />
       <TechnicalSkills />
       <Projects />
-      <Internships />
-      <Leadership />
+      {internshipsList && internshipsList.length > 0 && <Internships />}
+      {leadershipList && leadershipList.length > 0 && <Leadership />}
       <SoftSkills />
-      <main className="flex-1">
-        {/* Remaining sections will follow */}
-      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
