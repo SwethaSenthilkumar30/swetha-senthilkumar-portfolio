@@ -107,7 +107,22 @@ export const technicalSkills = {
   ],
 };
 
-export const leadershipList = [];
+export const leadershipList = [
+  {
+    title: "Technical Symposium Coordinator",
+    description:
+      "Organized inter-college technical events, hands-on coding challenges, and collaborative workshops for engineering students.",
+    role: "Student Coordinator",
+    badge: "Leadership",
+  },
+  {
+    title: "AI & Innovation Community",
+    description:
+      "Collaborated with student peers on artificial intelligence projects, domain knowledge sharing sessions, and developer hackathons.",
+    role: "Active Member",
+    badge: "Community",
+  },
+];
 
 export const internshipsList = [
   {
