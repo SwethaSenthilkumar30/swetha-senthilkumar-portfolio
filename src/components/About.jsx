@@ -62,7 +62,7 @@ const About = () => {
                   {/* Portrait photo filling the face */}
                   <img
                     src={stackImage}
-                    alt={`${personalInfo.name} portrait`}
+                    alt="Swetha SenthilKumar — Java Full Stack Developer, TAP Academy student"
                     className="w-full flex-1 rounded-xl object-cover object-top shadow-md"
                   />
                 </div>

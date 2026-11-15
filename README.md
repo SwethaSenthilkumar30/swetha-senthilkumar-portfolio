@@ -1,40 +1,42 @@
-# Swetha SenthilKumar — Developer Portfolio
+# Swetha SenthilKumar — Portfolio
 
-A responsive single-page developer portfolio website built with React 19, Vite, and Tailwind CSS 4.
+A modern, responsive single-page developer portfolio showcasing full-stack Java, Spring, and web engineering projects.
 
 Built during the placement training program at [TAP Academy](https://thetapacademy.com/) (full-stack development, AI and augmented reality training).
 
-## Features
-- **Fluid Splash Cursor:** Interactive fluid cursor animation powered by WebGL.
-- **Intro Preloader:** Dynamic animated water-fill typography and smooth shutter transition.
-- **Hero Reel:** Responsive non-cropping background character video with interactive play/pause reel controls.
-- **Lanyard ID Badge & Visiting Card:** 3D flip card with portrait badge on front and contact QR code on reverse.
-- **Technical Skills:** Category cards showcasing full-stack proficiencies with interactive badges.
-- **Interactive Process Roadmap:** Scroll-driven SVG line progression revealing hanging tag cards.
-- **Featured Projects:** Showcases flagship full-stack and AI projects with live and GitHub links.
-- **Work Experience & Internships:** Glassmorphic experience cards with torn-paper transitions.
-- **Leadership & Engagement:** Alternating timeline highlighting community contributions and symposium coordination.
-- **Core Soft Skills:** Light-theme competency cards with animated emoji containers.
-- **Direct Contact System:** Integrated with EmailJS and client mailto fallback with status indicators.
+## Live Site
+https://YOUR-SITE-URL/
 
 ## Tech Stack
-- **Framework:** React 19, Vite
-- **Styling:** Tailwind CSS 4
-- **Animations:** Framer Motion, AOS
-- **Utilities:** EmailJS, react-qr-code
+- React 19
+- Vite
+- Tailwind CSS 4
+- Framer Motion
+- AOS
+- EmailJS
+- WebGL
 
-## Getting Started
+## Run Locally
 
 ```bash
-# Install dependencies
+# 1. Install dependencies
 npm install
 
-# Start local development server
+# 2. Start local development server
 npm run dev
 
-# Run linter
-npm run lint
-
-# Production build
+# 3. Build for production
 npm run build
 ```
+
+## Environment Variables
+
+Create a `.env.local` file in the root directory with your EmailJS credentials:
+
+```env
+VITE_EMAILJS_SERVICE_ID=
+VITE_EMAILJS_TEMPLATE_ID=
+VITE_EMAILJS_PUBLIC_KEY=
+```
+
+*(If unconfigured, the contact form uses the pre-formatted email-client mailto fallback).*
