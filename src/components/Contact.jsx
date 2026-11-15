@@ -43,10 +43,7 @@ const Contact = () => {
       publicKey !== 'YOUR_EMAILJS_PUBLIC_KEY';
 
     if (!isConfigured) {
-      const subject = `Portfolio message from ${firstName} ${lastName}`.trim();
-      const mailtoUrl = `mailto:${personalInfo.emails.primary}?subject=${encodeURIComponent(
-        subject
-      )}&body=${encodeURIComponent(
+      const mailtoUrl = `mailto:${personalInfo.emails.primary}?subject=Portfolio Contact from ${firstName} ${lastName}&body=${encodeURIComponent(
         `From: ${firstName} ${lastName}\nEmail: ${email}\n\n${message}`
       )}`;
       window.open(mailtoUrl, '_blank');
@@ -126,12 +123,6 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="flex flex-col gap-10"
           >
-            {/* Subject for EmailJS template */}
-            <input
-              type="hidden"
-              name="subject"
-              value="Portfolio message from {{first_name}} {{last_name}}"
-            />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               {/* Left Column: Underline-only inputs */}
               <div className="flex flex-col gap-8">

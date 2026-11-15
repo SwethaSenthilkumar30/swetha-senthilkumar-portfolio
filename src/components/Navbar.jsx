@@ -16,7 +16,7 @@ const Navbar = () => {
     };
   }, []);
 
-  const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+  const navLinks = ['Home', 'About', 'Skills', 'Process', 'Projects', 'Contact'];
 
   const hireMeMailto = `mailto:${personalInfo?.emails?.primary || 'saiswethasalem@gmail.com'}?subject=Hiring Inquiry – Portfolio&body=Hello ${personalInfo?.name || 'Swetha'},%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,`;
 
