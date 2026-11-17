@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-SITE-URL/sitemap.xml
+Sitemap: https://portfolio-ten-phi-8ide3ucnar.vercel.app/sitemap.xml

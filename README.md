@@ -5,7 +5,7 @@ A modern, responsive single-page developer portfolio showcasing full-stack Java,
 Built during the placement training program at [TAP Academy](https://thetapacademy.com/) (full-stack development, AI and augmented reality training).
 
 ## Live Site
-https://YOUR-SITE-URL/
+https://portfolio-ten-phi-8ide3ucnar.vercel.app/
 
 ## Tech Stack
 - React 19
